@@ -1,0 +1,399 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    background-color: #3d3634;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', 'sans-serif';
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+.encabezado {
+    position: fixed;
+    background-color: #262626;
+    width: 100%;
+    height: auto;
+    top: 0px;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado ul li img{
+    width: 140px;
+}
+
+.encabezado .menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: rgb(218, 20, 106);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.encabezado .redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(218, 20, 106);
+    font-weight: bold;
+    left: 0;
+    font-size: 30px;
+}
+
+.encabezado .redes img{
+    width: 40px;
+}
+
+.encabezado ul li a {
+    text-decoration: none;
+    color: #E5329D
+    
+}
+
+/* Estilo para los elementos de la lista */
+.borde-encabezado ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Estilo para el subrayado */
+.borde-encabezado ul li .link::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Inicialmente, el subrayado comienza desde la izquierda */
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #E5329D; /* Color del subrayado */
+    transition: width 0.3s ease; /* Transición suave del ancho */
+}
+
+/* Estilo para expandir el subrayado al pasar el cursor */
+.borde-encabezado ul li .link:hover::after {
+    width: 100%; /* Expandir el subrayado hasta el 100% */
+}
+
+/* Estilo para la imagen del logo */
+.borde-encabezado ul li img {
+    transition: transform 0.3s ease; /* Agrega una transición suave a la transformación */
+    border-radius: 100%;
+}
+
+/* Estilo para agrandar la imagen al pasar el cursor */
+.borde-encabezado ul li img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    cursor: pointer;
+
+}
+
+/*MAIN*/
+
+#cuerpo-principal {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-bottom: 7%;
+}
+
+.artesp {
+    align-items: center;
+    justify-content: center;
+    max-width: 85%; /* Máximo ancho del contenedor */
+    padding-left: 20px; /* Espaciado interno */
+    margin-top: 13%; 
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de los bordes redondeados */
+    color: white;
+
+}
+
+.artesp h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.artesp p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.linea1 {
+    width: 80%;
+    border: 0;
+    height: 5px;
+    background-color: #262626;
+    margin: 0 auto;
+    display: flexbox;
+    margin-top: 8%;
+}
+
+.art1 {
+    display: flex;
+    flex-direction: row; /* Para colocar los elementos en una fila */
+    justify-content: center;
+    max-width: 85%; /* Máximo ancho del contenedor */
+    padding-left: 20px; /* Espaciado interno */
+    margin-top: 13%;
+    background-color: #E5E0E3;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de los bordes redondeados */
+
+}
+
+
+.art1 p {
+    font-size: 30px;
+    margin-top: 7%;
+}
+
+.art1 h1 {
+    font-size: 50px;
+    color: #E5329D;
+
+}
+
+.art2 {
+    display: flex;
+    flex-direction: row; /* Para colocar los elementos en una fila */
+    justify-content: center;
+    max-width: 85%; /* Máximo ancho del contenedor */
+    padding-left: 20px; /* Espaciado interno */
+    margin-top: 6%;
+    background-color: #E5E0E3;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de los bordes redondeados */
+
+}
+
+.art2 p {
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+.art2 h1 {
+    font-size: 50px;
+    color: #E5329D;
+
+}
+
+.art3 {
+    display: flex;
+    flex-direction: row; /* Para colocar los elementos en una fila */
+    justify-content: center;
+    max-width: 85%; /* Máximo ancho del contenedor */
+    padding-left: 20px; /* Espaciado interno */
+    margin-top: 6%;
+    background-color: #E5E0E3;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de los bordes redondeados */
+
+}
+
+.art1 img, .art2 img, .art3 img {
+    height: 100%;
+    width: auto; /* Para mantener la proporción de aspecto */
+    max-width: 100%;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 16px;
+}
+
+
+.art3 p {
+    font-size: 30px;
+    margin-top: 8%;
+}
+
+.art3 h1 {
+    font-size: 50px;
+    color: #E5329D;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #262626; /* Fondo del footer */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Evita que el padding o border cause desbordamiento */
+    margin: 0 auto; /* Elimina márgenes laterales */
+    color: white;
+    padding: 20px 0; /* Espacio superior e inferior */
+}
+
+footer div {
+    margin-bottom: 15px; /* Espacio entre los elementos de texto y las redes sociales */
+}
+
+footer .redes {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos de redes sociales */
+    padding: 0;
+    margin: 0;
+}
+
+footer .redes li {
+    display: inline-block;
+}
+
+footer .redes img {
+    width: 40px; /* Ajusta el tamaño de los íconos de redes sociales */
+    height: auto;
+    transition: transform 0.3s ease; /* Animación en hover */
+}
+
+footer .redes img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+footer div:first-child {
+    font-size: 14px; /* Tamaño de la letra para el texto de copyright */
+    color: white; /* Color del texto */
+}
+
+
+/* Media Queries para diseño responsive */
+@media (max-width: 768px) {
+    .encabezado {
+        padding: 5px 0;
+        padding-left: 15px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav1 .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav1 .media-botones {
+        font-size: 15px;
+    }
+
+    .nav1 .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y los enlaces */
+    }
+
+    .encabezado .menu-container {
+        font-size: 16px;
+    }
+
+    .encabezado .menu li {
+        margin-bottom: 10px;
+    }
+
+    .encabezado ul li img {
+        width: 160px;
+    }
+
+    .artesp {
+        height: auto;
+        margin-top: 35%;
+    }
+
+    .artesp h1 {
+        font-size: 50px;
+    }
+
+    .artesp p {
+        font-size: 20px;
+    }
+
+    .art1, .art2, .art3 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 0;
+    }
+
+    .art1 img, .art2 img, .art3 img {
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .art1 p, .art2 p, .art3 p {
+        font-size: 20px;
+    }
+
+    .art1 h1, .art2 h1, .art3 h1 {
+        font-size: 40px;
+    }
+
+    .linea1 {
+        width: 90%;
+    }
+
+    .encabezado .redes {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado .menu-container {
+        font-size: 14px;
+    }
+
+    .encabezado ul li img {
+        width: 70px;
+    }
+
+    .artesp h1 {
+        font-size: 40px;
+    }
+
+    .artesp p {
+        font-size: 18px;
+    }
+
+    .art1 p, .art2 p, .art3 p {
+        font-size: 18px;
+    }
+
+    .art1 h1, .art2 h1, .art3 h1 {
+        font-size: 35px;
+    }
+}

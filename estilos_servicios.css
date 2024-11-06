@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    background-color: #3d3634;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', 'sans-serif';
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* HEADER x_x */
+
+header {
+    position: fixed;
+    background-color: #262626;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    
+}
+
+.nav1 { /* ESPACIADO ENTRE LOS ELEMENTOS DEL ENCABEZADO */
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul img { /* IMAGEN LOGO */
+    width: 140px;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: rgb(218, 20, 106);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header .redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(218, 20, 106);
+    font-weight: bold;
+    left: 0;
+    font-size: 30px;
+}
+
+header .redes img{
+    width: 40px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #E5329D
+}
+
+.borde-encabezado ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Estilo para el subrayado */
+.borde-encabezado ul li .link::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Inicialmente, el subrayado comienza desde la izquierda */
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #E5329D; /* Color del subrayado */
+    transition: width 0.3s ease; /* Transición suave del ancho */
+}
+
+/* Estilo para expandir el subrayado al pasar el cursor */
+.borde-encabezado ul li .link:hover::after {
+    width: 100%; /* Expandir el subrayado hasta el 100% */
+}
+
+/* Estilo para la imagen del logo */
+.borde-encabezado ul li img {
+    transition: transform 0.3s ease; /* Agrega una transición suave a la transformación */
+    border-radius: 100%;
+}
+
+/* Estilo para agrandar la imagen al pasar el cursor */
+.borde-encabezado ul li img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    cursor: pointer;
+}
+
+/* MAIN :p */
+
+main {
+    margin-top: 13%;
+    margin-bottom: 7%;
+    
+}
+
+.artesp {
+    margin: 0 auto;
+    color: white;
+    max-width: 80%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.artesp h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.artesp p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.linea1 {
+    width: 80%;
+    border: 0;
+    height: 5px;
+    background-color: #262626;
+    margin: 0 auto;
+    display: flexbox;
+    margin-top: 8%;
+}
